@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="com.mycompany_TS_DZ1_jar_1.0-SNAPSHOT">
+
+    <!--
+    see examples at http://testng.org/doc/documentation-main.html#testng-xml
+
+    <suite-files>
+        <suite-file path="./junit-suite.xml" />
+    </suite-files>
+
+    <test name="TimeOut">
+        <classes>
+            <class name="test.timeout.TimeOutTest" />
+            <class name="test.timeout.TimeOutFromXmlTest"/>
+            <class name="test.timeout.TimeOutThreadLocalSampleTest"/>
+        </classes>
+    </test>
+    -->
+
+    <test name="Suite">
+        <classes>
+            <class name="testoviPraznaPolja.TP10_RegStudenta_KorisnickoImeNijeUneto"/>
+            <class name="testoviPraznaPolja.TP21_RegStudenta_LozinkaNijeUneta"/>
+            <class name="testoviPraznaPolja.TP22_RegStudenta_PotvrdiLozinkuNijeUneta"/>
+            <class name="testoviPraznaPolja.TP23_RegStudenta_ImeNijeUneto"/>
+            <class name="testoviPraznaPolja.TP24_RegStudenta_PrezimeNijeUneto"/>
+            <class name="testoviPraznaPolja.TP25_RegStudenta_TelefonNijeUnet"/>
+            <class name="testoviPraznaPolja.TP26_RegStudenta_AdresaNijeUneta"/>
+            <class name="testoviPraznaPolja.TP27_RegStudenta_GodinaNijeUneta"/>
+            <class name="testoviPraznaPolja.TP28_RegStudenta_DiplomaNijeUneta"/>
+            <class name="testoviPraznaPolja.TP2_PrijavaKorisnika_KorisnickoImeNijeUneto"/>
+            <class name="testoviPraznaPolja.TP3_PrijavaKorisnika_LozinkaNijeUneta"/>
+            <class name="testoviPraznaPolja.TP4_PrijavaKorisnika_NijeUnetoKorisnickoImeNiLozinka"/>
+            <class name="testoviPraznaPolja.TP70_RegAdmin_KorisnickoImePrazno"/>
+            <class name="testoviPraznaPolja.TP81_RegAdmin_LozinkaNijeUneta"/>
+            <class name="testoviPraznaPolja.TP82_RegAdmin_PotvrdiLozinkaNijeUneta"/>
+            <class name="testoviPraznaPolja.TP83_RegAdmin_ImeNijeUneto"/>
+            <class name="testoviPraznaPolja.TP84_RegAdmin_PrezimeNijeUneto"/>
+            <class name="testoviPraznaPolja.TP85_RegAdmin_TelefonNijeUnet"/>
+            <class name="testoviPraznaPolja.TP86_RegAdmin_AdresaNijeUneta"/>
+            <class name="testoviPraznaPolja.TP8_PostaniKorisnik_TipnNijeIzabran"/>
+        </classes>
+    </test>
+
+</suite>

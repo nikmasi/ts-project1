@@ -1,0 +1,105 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/EmptyTestNGTest.java to edit this template
+ */
+package firefoxTestovi;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import static org.testng.Assert.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+/**
+ *
+ * @author TS
+ */
+public class TP63Firefox {
+    
+    public TP63Firefox() {
+    }
+
+    public static String baseURL="http://localhost/projekat5/IP_projekat/";
+    public static WebDriver driver;
+    
+    @Test
+    public void test63(){
+        System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
+        try{
+            driver = new FirefoxDriver();
+            driver.get(baseURL);
+            driver.manage().window().maximize();
+            
+            driver.findElement(By.linkText("Postani korisnik")).click();
+           
+            
+            driver.findElement(By.xpath("//input[@value='kompanija']")).click();
+            driver.findElement(By.name("dugme_reg")).click();
+            
+            String korisnickoIme="nordeus12firefox";
+            String lozinka="Sifra123$";
+            String naziv="Nordues";
+            String grad="Novi Beograd";
+            String adresa="Bulevar Milutina Milankovica bb";
+            String direktor="Branko Milutinovic";
+            String PIB="106525607";
+            String brojZaposlenih="200";
+            String ePosta="nordeus5@norde.us";
+            String sajt="www.nordeus5.com";
+            String delatnost="IT";
+            String uzaSpec="Games";
+            String slika="C:\\wamp64\\www\\projekat5\\PROJEKAT 5 - Specifikacija zahteva - Sajam poslova C.pdf";
+            
+            driver.findElement(By.name("k_ime")).sendKeys(korisnickoIme);
+            driver.findElement(By.name("lozinka")).sendKeys(lozinka);
+            driver.findElement(By.name("lozinka_potvrdi")).sendKeys(lozinka);
+            driver.findElement(By.name("naziv")).sendKeys(naziv);
+            driver.findElement(By.name("grad")).sendKeys(grad);
+            driver.findElement(By.name("adresa")).sendKeys(adresa);
+            driver.findElement(By.name("direktor")).sendKeys(direktor);
+            driver.findElement(By.name("pib")).sendKeys(PIB);
+            driver.findElement(By.name("brzaposlenih")).sendKeys(brojZaposlenih);
+            driver.findElement(By.name("eposta")).sendKeys(ePosta);
+            driver.findElement(By.name("vebsajt")).sendKeys(sajt);
+            driver.findElement(By.name("delatnost")).sendKeys(delatnost);
+            
+            driver.findElement(By.name("specijalnost")).sendKeys(uzaSpec);
+            //driver.findElement(By.name("logo")).click();
+            driver.findElement(By.name("logo")).sendKeys(slika);
+            driver.findElement(By.name("dugme_reg")).click();
+            
+            String poruka="Tip fajla nije podrzan. Odaberite drugi fajl.";
+           
+            Assert.assertTrue(driver.getPageSource().contains(poruka));
+            
+            
+        }catch(Exception e){
+            //System.out.println(e.getMessage());
+        }
+        if(driver!=null){
+            driver.quit();
+        }
+    }
+
+    @BeforeClass
+    public static void setUpClass() throws Exception {
+    }
+
+    @AfterClass
+    public static void tearDownClass() throws Exception {
+    }
+
+    @BeforeMethod
+    public void setUpMethod() throws Exception {
+    }
+
+    @AfterMethod
+    public void tearDownMethod() throws Exception {
+    }
+}

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="com.mycompany_TS_DZ1_jar_1.0-SNAPSHOT">
+
+    <!--
+    see examples at http://testng.org/doc/documentation-main.html#testng-xml
+
+    <suite-files>
+        <suite-file path="./junit-suite.xml" />
+    </suite-files>
+
+    <test name="TimeOut">
+        <classes>
+            <class name="test.timeout.TimeOutTest" />
+            <class name="test.timeout.TimeOutFromXmlTest"/>
+            <class name="test.timeout.TimeOutThreadLocalSampleTest"/>
+        </classes>
+    </test>
+    -->
+
+    <test name="Suite">
+        <classes>
+            <class name="edgeTestovi.TP37Edge"/>
+            <class name="edgeTestovi.TP39Edge"/>
+            <class name="edgeTestovi.TP40Edge"/>
+            <class name="edgeTestovi.TP41Edge"/>
+            <class name="edgeTestovi.TP42Edge"/>
+            <class name="edgeTestovi.TP43Edge"/>
+            <class name="edgeTestovi.TP44Edge"/>
+            <class name="edgeTestovi.TP45Edge"/>
+            <class name="edgeTestovi.TP46Edge"/>
+            <class name="edgeTestovi.TP47Edge"/>
+            <class name="edgeTestovi.TP48Edge"/>
+            <class name="edgeTestovi.TP61Edge"/>
+            <class name="edgeTestovi.TP63Edge"/>
+        </classes>
+    </test>
+
+</suite>

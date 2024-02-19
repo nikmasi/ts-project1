@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="com.mycompany_TS_DZ1_jar_1.0-SNAPSHOT">
+
+    <!--
+    see examples at http://testng.org/doc/documentation-main.html#testng-xml
+
+    <suite-files>
+        <suite-file path="./junit-suite.xml" />
+    </suite-files>
+
+    <test name="TimeOut">
+        <classes>
+            <class name="test.timeout.TimeOutTest" />
+            <class name="test.timeout.TimeOutFromXmlTest"/>
+            <class name="test.timeout.TimeOutThreadLocalSampleTest"/>
+        </classes>
+    </test>
+    -->
+
+    <test name="Suite">
+        <classes>
+            <class name="testovi.TP37_RegKompanije_KorisnickoImePostoji"/>
+            <class name="testovi.TP39_RegKompanije_DuzinaLozinkeManjaOd8"/>
+            <class name="testovi.TP40_RegKompanije_DuzinaLozinkeVecaOd12"/>
+            <class name="testovi.TP41_RegKompanije_LozinkaNemaVelikihSlova"/>
+            <class name="testovi.TP42_RegKompanije_LozinkaIma2MalaSlova"/>
+            <class name="testovi.TP43_RegKompanije_LozinkaIma0Numerika"/>
+            <class name="testovi.TP44_RegKompanije_LozinkaNemaSpecijalniKarakter"/>
+            <class name="testovi.TP45_RegKompanije_PocetniKarakterNijeSlovo"/>
+            <class name="testovi.TP46_RegKompanije_LozinkaIma2uzastopnaIstaZnaka"/>
+            <class name="testovi.TP47_RegKompanije_LozinkaIma3uzastopnaIstaZnaka"/>
+            <class name="testovi.TP48_RegKompanije_LozinkaPotvrdiLozinkaNisuIste"/>
+            <class name="testovi.TP61_RegKompanije_LogoKompanijeVecihDimenzija"/>
+            <class name="testovi.TP63_RegKompanije_LogoKompanijeNijeFormat"/>
+  
+            
+        </classes>
+    </test>
+    
+    
+
+</suite>

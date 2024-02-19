@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="com.mycompany_TS_DZ1_jar_1.0-SNAPSHOT">
+
+    <!--
+    see examples at http://testng.org/doc/documentation-main.html#testng-xml
+
+    <suite-files>
+        <suite-file path="./junit-suite.xml" />
+    </suite-files>
+
+    <test name="TimeOut">
+        <classes>
+            <class name="test.timeout.TimeOutTest" />
+            <class name="test.timeout.TimeOutFromXmlTest"/>
+            <class name="test.timeout.TimeOutThreadLocalSampleTest"/>
+        </classes>
+    </test>
+    -->
+
+    <test name="Suite">
+        <classes>
+            <class name="firefoxTestovi.TP37Firefox"/>
+            <class name="firefoxTestovi.TP39Firefox"/>
+            <class name="firefoxTestovi.TP40Firefox"/>
+            <class name="firefoxTestovi.TP41Firefox"/>
+            <class name="firefoxTestovi.TP42Firefox"/>
+            <class name="firefoxTestovi.TP43Firefox"/>
+            <class name="firefoxTestovi.TP44Firefox"/>
+            <class name="firefoxTestovi.TP45Firefox"/>
+            <class name="firefoxTestovi.TP46Firefox"/>
+            <class name="firefoxTestovi.TP47Firefox"/>
+            <class name="firefoxTestovi.TP48Firefox"/>
+            <class name="firefoxTestovi.TP61Firefox"/>
+            <class name="firefoxTestovi.TP63Firefox"/>
+        </classes>
+    </test>
+
+</suite>
